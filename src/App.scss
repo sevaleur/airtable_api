@@ -1,0 +1,63 @@
+* 
+{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+body 
+{
+    background: #17678f;
+    color: #fff;
+}
+
+.App
+{
+    display: grid; 
+    height: 100vh; 
+    .dagens 
+    {
+        grid-area: 1 / 1 / -1 / -1;
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        .header
+        {
+            grid-area: 1 / 1 / 2 / -1;
+            align-self: center;
+            justify-self: center;
+            font-size: 5rem;
+            text-align: center;
+        }
+        .excuse_btn 
+        {
+            grid-area: 1 / 1 / -1 / -1;
+            align-self: center;
+            justify-self: center;
+            display: flex; 
+            justify-content: center;
+            button 
+            {
+                width: 100px; 
+                height: 50px;
+                border-radius: 30px; 
+                border: none;
+                margin: 5rem;
+            }
+        }
+        .excuse
+        {
+            grid-area: 2 / 1 / -1 / -1;
+            height: 100%;
+            align-self: center;
+            justify-self: center;
+            text-align: center;
+            .txt 
+            {
+                padding: 0 24rem;
+            }
+        }
+    }
+}
+
+
